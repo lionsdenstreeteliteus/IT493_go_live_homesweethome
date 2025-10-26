@@ -1,0 +1,564 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GFS Didot", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+ul,
+li,
+a,
+span {
+  font-weight: 500;
+}
+
+/* Top Ribbon */
+.top-ribbon {
+  background-color: #b1ac72; /* Dark gold */
+  font-size: 0.9rem;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+
+/* Logo Styling */
+.logo-text {
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+/* Logo Image Styling */
+.logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Optional: Adjust navbar brand spacing */
+.navbar-brand {
+  padding: 0;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Base Nav Link Styling */
+.navbar-nav .nav-link {
+  /* color: white; */
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 8px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #fd914d; /* Gold hover */
+}
+
+/* Active Link Styling */
+.navbar-nav .active-link {
+  color: #fd914d;
+  font-weight: 600;
+}
+
+/* Optional: Underline on active */
+.navbar-nav .active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fd914d;
+}
+
+/* Call to Action Button */
+.call-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.call-btn:hover {
+  background-color: #fd914d;
+  color: #000;
+  border-color: white;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* Overlay Content */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
+.hero-overlay .btn {
+  font-size: 1rem;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero-overlay .btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+#about-preview {
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a); /* Gray to black */
+  color: #f1f1f1;
+}
+
+#about-preview h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+#about-preview p {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+
+#about-preview .btn-outline-primary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+#about-preview .btn-outline-primary:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+#about-preview img {
+  position: relative;
+  z-index: 1;
+}
+
+#about-preview img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Services Section Background */
+#services {
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+}
+
+/* Fixed Size Tile */
+.service-tile {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.service-tile:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay Title */
+.tile-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+}
+
+.tile-overlay h5 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background: whitesmoke;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Accent Text */
+.text-accent {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+/* Star Icons */
+.stars i {
+  color: #d4af37; /* Gold tone */
+  font-size: 1rem;
+}
+
+/* Gallery Section Background */
+#gallery {
+  /* background: linear-gradient(to right, #1a1a1a, #2c2c2c); */
+}
+
+/* Gallery Tile Styling */
+.gallery-tile {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-tile:hover img {
+  transform: scale(1.1);
+}
+
+/* Estimate Section Background */
+#estimate {
+  background: whitesmoke;
+}
+
+/* Form Inputs */
+.estimate-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  color: #000;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.estimate-form .form-control::placeholder {
+  color: #000;
+}
+
+/* Checkboxes */
+.form-check-input {
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+.form-check-input:checked {
+  background-color: #d4af37;
+  border-color: #d4af37;
+}
+
+.form-check-label {
+  margin-left: 8px;
+}
+
+/* Submit Button */
+.estimate-form .btn {
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.estimate-form .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Banner Image Styling */
+.banner-img {
+  max-height: 60vh;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+/* About Content Section */
+#about-content {
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+}
+
+/* Accent Heading */
+.text-accent {
+  color: #d4af37;
+}
+
+/* Paragraph Styling */
+#about-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Team Section Background */
+#team {
+  background: whitesmoke;
+}
+
+/* Team Tile Styling */
+.team-tile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #d4af37;
+}
+
+/* Accent Color */
+.text-accent {
+  color: #d4af37;
+  font-weight: 500;
+}
+
+/* Team Image */
+.team-tile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #d4af37;
+}
+
+/* Services Hero Section */
+.services-hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.services-hero-image img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.about-us-hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 0 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Overlay Content */
+.services-hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 0 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.services-hero-title {
+  font-size: 3rem;
+  color: #000;
+}
+
+/* Completed Projects Section */
+#completed-projects {
+  background-color: whitesmoke;
+  /* background: linear-gradient(to right, #1a1a1a, #2c2c2c); */
+}
+
+/* List Styling */
+#completed-projects ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#completed-projects li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Contact Info Styling */
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.text-accent {
+  color: #d4af37;
+}
+
+.tooltip-container {
+  position: fixed;
+  bottom: 85px;
+  left: 17px; /* or right: 20px if you prefer */
+  z-index: 9999;
+}
+
+.whatsapp-float {
+  background-color: #25d366;
+  color: #fff;
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 70px;
+  left: 58%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+}
+
+.scrollup-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b1ac72;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.scrollup-button:hover {
+  background-color: #b1ac72;
+  text-decoration: none;
+}
+
+.scrollup-icon {
+  line-height: 1;
+}
+
+/* General styling for each service section */
+.service-detail {
+  padding: 60px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Alternate background for visual rhythm */
+/* .service-detail:nth-of-type(even) {
+  background-color: #f9f9f9;
+} */
+
+/* Heading styling */
+.service-detail h3 {
+  font-family: "GFS Didot", sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Paragraph styling */
+.service-detail p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 800px;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .service-detail h3 {
+    font-size: 24px;
+  }
+  .service-detail p {
+    font-size: 15px;
+  }
+}
+
+.text-danger {
+  font-size: 13px;
+  margin-top: 4px;
+}
