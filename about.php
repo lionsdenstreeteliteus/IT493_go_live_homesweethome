@@ -54,6 +54,13 @@
                     <p class="text-light mt-3">
                         At Home Sweet Home, we specialize in transforming homes with high-quality craftsmanship and innovative designs. With years of experience in the remodeling industry, we have built a reputation for excellence, reliability, and customer satisfaction.
                     </p>
+                    <!-- Instagram post link -->
+                    <p class="mt-3">
+                        <a href="https://www.instagram.com/p/DQO_-B1AEjH/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                            <i class="fab fa-instagram me-2" style="color:#E1306C"></i>
+                            See our recent project on Instagram
+                        </a>
+                    </p>
                     <h5 class="text-white fw-semibold mt-4"><i class="fa fa-history me-2" style="color: #d4af37"></i>Our History</h5>
                     <p class="text-light">
                         Home Sweet Home was founded with a vision to transform homes with quality craftsmanship and innovative design. Over the years, we have built a reputation for excellence, offering professional home remodeling services tailored to our clients’ needs.
